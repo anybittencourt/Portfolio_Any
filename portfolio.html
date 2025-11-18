@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Any Rosa Severo Bittencourt</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header id="inicio" class="hero-section">
+        <div class="container">
+            <div class="profile-picture">
+                <img class="foto_perfil" src="./assets/Any_Rosa.png" alt="Foto de Perfil de Any Rosa Severo Bittencourt">
+            </div>
+            <h1>Any Rosa Severo Bittencourt</h1>
+            
+            <p class="description">
+                Desenvolvedora Front-End focada em performance web, criação de interfaces eficientes e código organizado. 
+                Experiência na construção de páginas responsivas, otimização de carregamento e implementação de boas práticas. 
+                Conhecimento em JavaScript, HTML, CSS e integração com APIs.
+            </p>
+
+            <div class="contact-info">
+                <span><i class="fas fa-map-marker-alt"></i> São Leopoldo – Rio Grande do Sul</span>
+                <span><i class="fas fa-phone"></i> +55 51 99999-6174</span>
+                <span><i class="fas fa-envelope"></i> anyrosasevero@gmail.com</span>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/any-rosa-severo-bittencourt-/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/anybittencourt" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="competencias" class="tech-skills-section">
+        <div class="container">
+            <h2>Competências Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Linguagens</h3>
+                    <p>HTML, CSS, JavaScript, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks/Bibliotecas</h3>
+                    <p>Node.js, Express.js</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Banco de Dados</h3>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Ferramentas/Outros</h3>
+                    <p>Git, Figma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects-section">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card" onclick="openModal('mamae-a-bordo-modal')">
+                    <img src="./assets/Mamãe_a_Bordo.png" alt="Imagem do Projeto Mamãe a Bordo">
+                    <h3>Mamãe a Bordo</h3>
+                    <p class="click-to-see">Clique para ver detalhes</p>
+                </div>
+                
+                <div class="project-card" onclick="openModal('smartflow-modal')">
+                    <img src="./assets/SmartFlow.png" alt="Imagem do Projeto SmartFlow">
+                    <h3>SmartFlow</h3>
+                    <p class="click-to-see">Clique para ver detalhes</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="mamae-a-bordo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('mamae-a-bordo-modal')">&times;</span>
+            <h3>Mamãe a Bordo — Aplicação Web</h3>
+            <p><strong>Descrição:</strong> Aplicação voltada para auxiliar mães e gestantes em situação de vulnerabilidade, oferecendo informações, postagens, agenda pessoal e chat privado em tempo real. O projeto resolve a falta de acesso centralizado a orientações práticas durante a gestação e os primeiros cuidados com o recém-nascido.</p>
+            <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript, Node.js, Express.js, Socket.IO, MySQL.</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/anybittencourt/Mamae_A_Bordo.git" target="_blank">https://github.com/anybittencourt/Mamae_A_Bordo.git</a></p>
+        </div>
+    </div>
+
+    <div id="smartflow-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('smartflow-modal')">&times;</span>
+            <h3>SmartFlow — Sistema de Gerenciamento Escolar</h3>
+            <p><strong>Descrição:</strong> Plataforma para organizar turmas escolares, permitindo controle de alunos, professores, presenças e notas, com acessos diferenciados para cada tipo de usuário. Resolve a desorganização de registros acadêmicos e centraliza a gestão escolar.</p>
+            <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript, MySQL.</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/bernardoeeee/SmartFlow.git" target="_blank">https://github.com/bernardoeeee/SmartFlow.git</a></p>
+        </div>
+    </div>
+    
+    <script src="portfolio.js"></script>
+</body>
+</html>
